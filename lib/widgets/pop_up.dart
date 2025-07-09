@@ -77,7 +77,7 @@ class _PopUpState extends State<PopUp> {
                   value: selectedValue,
                   validator: FormValidation.validateData,
                   items:
-                      ['Sender', 'Traveller']
+                      ['Sender/Business', 'Traveller']
                           .map(
                             (e) => DropdownMenuItem<String>(
                               value: e,

@@ -79,7 +79,7 @@ class _MobilePopUpState extends State<MobilePopUp> {
                   validator: FormValidation.validateData,
                   value: selectedValue,
                   items:
-                      ['Sender', 'Traveller']
+                      ['Sender/Business', 'Traveller']
                           .map(
                             (e) => DropdownMenuItem<String>(
                               value: e,
