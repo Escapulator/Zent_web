@@ -53,7 +53,7 @@ class Home extends StatelessWidget {
                   onPressed: () {
                     showDialog(context: context, builder: (context) => PopUp());
                   },
-                  child: Text(
+                  child: SelectableText(
                     'Join Waitlist',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -81,7 +81,7 @@ class Home extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                SelectableText(
                   'We are launching soon. ',
                   style: TextStyle(
                     color: Colors.white /* semantic-fg-on-contrast */,
@@ -92,7 +92,7 @@ class Home extends StatelessWidget {
                   ),
                 ),
                 SvgPicture.asset('assets/icons/rocket.svg'),
-                Text(
+                SelectableText(
                   ' Don’t be left out! Join our waitlist.',
                   style: TextStyle(
                     color: Colors.white /* semantic-fg-on-contrast */,
@@ -115,7 +115,7 @@ class Home extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      SelectableText(
                         'Send Packages Faster, Cheaper, and Safer — With People Already on the Move',
                         style: TextStyle(
                           color: const Color(
@@ -127,7 +127,7 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 16.h),
-                      Text(
+                      SelectableText(
                         'Introducing Zent, Nigeria’s peer-to-peer delivery network.  Trusted travelers. Real-time tracking. No more courier headache',
                         style: TextStyle(
                           color: const Color(0xFF131214) /* semantic-fg-base */,
@@ -151,7 +151,7 @@ class Home extends StatelessWidget {
                             builder: (context) => PopUp(),
                           );
                         },
-                        child: Text(
+                        child: SelectableText(
                           'Join Waitlist',
                           textAlign: TextAlign.center,
                           style: TextStyle(
@@ -163,7 +163,7 @@ class Home extends StatelessWidget {
                         ),
                       ),
                       SizedBox(height: 24.h),
-                      Text(
+                      SelectableText(
                         '🎉 1,492 people have already joined Zent\'s waitlist.',
                         style: TextStyle(
                           color: const Color(

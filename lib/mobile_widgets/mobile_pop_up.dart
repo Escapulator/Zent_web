@@ -37,7 +37,7 @@ class _MobilePopUpState extends State<MobilePopUp> {
           key: _formKey,
           child: Column(
             children: [
-              Text(
+              SelectableText(
                 'Join the waitlist',
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -83,7 +83,7 @@ class _MobilePopUpState extends State<MobilePopUp> {
                           .map(
                             (e) => DropdownMenuItem<String>(
                               value: e,
-                              child: Text(
+                              child: SelectableText(
                                 e,
                                 style: TextStyle(
                                   color: Colors.black,
@@ -113,7 +113,7 @@ class _MobilePopUpState extends State<MobilePopUp> {
                       borderSide: const BorderSide(color: Color(0xFFE6E9EB)),
                     ),
                   ),
-                  hint: Text(
+                  hint: SelectableText(
                     'Which of these best describes you?',
                     style: TextStyle(
                       color: const Color(0xFF898D8F) /* semantic-fg-subtle */,
@@ -146,7 +146,7 @@ class _MobilePopUpState extends State<MobilePopUp> {
                     Navigator.of(context).pop();
                     ScaffoldMessenger.of(context).showSnackBar(
                       SnackBar(
-                        content: Text(
+                        content: SelectableText(
                           'Thank you for joining our waitlist. We look forward to serving you',
                           style: TextStyle(
                             color: Colors.white,
@@ -169,7 +169,7 @@ class _MobilePopUpState extends State<MobilePopUp> {
                 child:
                     isloading
                         ? CircularProgressIndicator()
-                        : Text(
+                        : SelectableText(
                           'Join Waitlist',
                           textAlign: TextAlign.center,
                           style: TextStyle(

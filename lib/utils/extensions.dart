@@ -18,13 +18,13 @@ extension ContextExt on BuildContext {
       barrierDismissible: dismissible, // user must tap button!
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text(title),
+          title: SelectableText(title),
           content: SingleChildScrollView(
-            child: ListBody(children: <Widget>[Text(message)]),
+            child: ListBody(children: <Widget>[SelectableText(message)]),
           ),
           actions: <Widget>[
             TextButton(
-              child: Text(buttonText),
+              child: SelectableText(buttonText),
               onPressed: () {
                 if (onActionClick == null) {
                   context.pop();
@@ -80,7 +80,7 @@ extension ContextExt on BuildContext {
       duration: duration,
       behavior: SnackBarBehavior.floating,
       width: width,
-      content: Text(message),
+      content: SelectableText(message),
       action: SnackBarAction(
         label: 'ok',
         onPressed: () {

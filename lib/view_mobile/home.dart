@@ -50,7 +50,7 @@ class HomeMobile extends StatelessWidget {
                     backgroundColor: Color(0xFF004ABA),
                     fixedSize: Size(156.w, 55.h),
                   ),
-                  child: Text(
+                  child: SelectableText(
                     'Join Waitlist',
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -76,7 +76,7 @@ class HomeMobile extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                SelectableText(
                   'We are launching soon. ',
                   style: TextStyle(
                     color: Colors.white /* semantic-fg-on-contrast */,
@@ -86,7 +86,7 @@ class HomeMobile extends StatelessWidget {
                   ),
                 ),
                 SvgPicture.asset('assets/icons/rocket.svg'),
-                Text(
+                SelectableText(
                   ' Don’t be left out! Join our waitlist.',
                   style: TextStyle(
                     color: Colors.white /* semantic-fg-on-contrast */,
@@ -112,7 +112,7 @@ class HomeMobile extends StatelessWidget {
           SizedBox(height: 40.h),
           SizedBox(
             width: 343.w,
-            child: Text(
+            child: SelectableText(
               'Send Packages Faster, Cheaper, and Safer — With People Already on the Move',
               style: TextStyle(
                 color: const Color(0xFF002966),
@@ -126,7 +126,7 @@ class HomeMobile extends StatelessWidget {
           SizedBox(height: 16.h),
           SizedBox(
             width: 343.w,
-            child: Text(
+            child: SelectableText(
               'Introducing Zent, Nigeria’s peer-to-peer delivery network. Trusted travelers. Real-time tracking. No more courier headache',
               textAlign: TextAlign.justify,
               style: TextStyle(
@@ -148,7 +148,7 @@ class HomeMobile extends StatelessWidget {
               backgroundColor: Color(0xFF004ABA),
               fixedSize: Size(355.w, 64.h),
             ),
-            child: Text(
+            child: SelectableText(
               'Join Waitlist',
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -160,7 +160,7 @@ class HomeMobile extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8.h),
-          Text(
+          SelectableText(
             '🎉 1,492 people have already joined Zent\'s waitlist.',
             textAlign: TextAlign.center,
             style: TextStyle(
