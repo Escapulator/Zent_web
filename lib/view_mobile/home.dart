@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-
-import '../mobile_widgets/mobile_pop_up.dart';
+import 'package:go_router/go_router.dart';
 
 class HomeMobile extends StatelessWidget {
   const HomeMobile({super.key});
@@ -42,10 +41,7 @@ class HomeMobile extends StatelessWidget {
                   SvgPicture.asset('assets/icons/zent.svg', height: 55.h),
                   ElevatedButton(
                     onPressed: () {
-                      showDialog(
-                        context: context,
-                        builder: (context) => MobilePopUp(),
-                      );
+                      context.go('/Waitlist');
                     },
                     style: ElevatedButton.styleFrom(
                       elevation: 0,
@@ -143,10 +139,7 @@ class HomeMobile extends StatelessWidget {
             SizedBox(height: 32.h),
             ElevatedButton(
               onPressed: () {
-                showDialog(
-                  context: context,
-                  builder: (context) => MobilePopUp(),
-                );
+                context.go('/Waitlist');
               },
               style: ElevatedButton.styleFrom(
                 elevation: 0,

@@ -5,14 +5,14 @@ import 'package:zent_web/widgets/custom_form.dart';
 import '../repository/remote_repo.dart';
 import '../utils/form_validator.dart';
 
-class MobilePopUp extends StatefulWidget {
-  const MobilePopUp({super.key});
+class MobileWaitlist extends StatefulWidget {
+  const MobileWaitlist({super.key});
 
   @override
-  State<MobilePopUp> createState() => _MobilePopUpState();
+  State<MobileWaitlist> createState() => _MobileWaitlistState();
 }
 
-class _MobilePopUpState extends State<MobilePopUp> {
+class _MobileWaitlistState extends State<MobileWaitlist> {
   String? selectedValue;
   final TextEditingController nameController = TextEditingController();
   final TextEditingController emailController = TextEditingController();
@@ -25,10 +25,10 @@ class _MobilePopUpState extends State<MobilePopUp> {
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
+    return Scaffold(
+      //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
       backgroundColor: Colors.white,
-      child: Container(
+      body: Container(
         height: 360.h,
         width: 377.w,
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(16.r)),

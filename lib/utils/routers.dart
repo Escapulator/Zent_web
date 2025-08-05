@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
+import 'package:zent_web/view_mobile/mobile_waitlist.dart';
 
 import '../view_mobile/home.dart';
 import '../view_model/login_cubit.dart';
@@ -279,6 +280,18 @@ class BRRouter {
             child: BlocProvider(
               create: (context) => LoginCubit(),
               child: HomeMobile(),
+            ),
+          );
+        },
+      ),
+      GoRoute(
+        path: '/Waitlist',
+        pageBuilder: (BuildContext context, GoRouterState state) {
+          return NoTransitionPage<void>(
+            key: state.pageKey,
+            child: BlocProvider(
+              create: (context) => LoginCubit(),
+              child: MobileWaitlist(),
             ),
           );
         },
