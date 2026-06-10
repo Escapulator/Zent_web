@@ -58,7 +58,7 @@ class Home extends StatelessWidget {
                         builder: (context) => PopUp(),
                       );
                     },
-                    child: SelectableText(
+                    child: Text(
                       'Join Waitlist',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -158,7 +158,7 @@ class Home extends StatelessWidget {
                               builder: (context) => PopUp(),
                             );
                           },
-                          child: SelectableText(
+                          child: Text(
                             'Join Waitlist',
                             textAlign: TextAlign.center,
                             style: TextStyle(

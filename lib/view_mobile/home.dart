@@ -3,6 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
+import 'mobile_waitlist.dart';
+
 class HomeMobile extends StatelessWidget {
   const HomeMobile({super.key});
 
@@ -41,14 +43,18 @@ class HomeMobile extends StatelessWidget {
                   SvgPicture.asset('assets/icons/zent.svg', height: 55.h),
                   ElevatedButton(
                     onPressed: () {
-                      context.go('/Waitlist');
+                      //context.go('/Waitlist');
+                      showDialog(
+                        context: context,
+                        builder: (context) => MobileWaitlist(),
+                      );
                     },
                     style: ElevatedButton.styleFrom(
                       elevation: 0,
                       backgroundColor: Color(0xFF004ABA),
                       fixedSize: Size(156.w, 55.h),
                     ),
-                    child: SelectableText(
+                    child: Text(
                       'Join Waitlist',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -139,14 +145,18 @@ class HomeMobile extends StatelessWidget {
             SizedBox(height: 32.h),
             ElevatedButton(
               onPressed: () {
-                context.go('/Waitlist');
+                //context.go('/Waitlist');
+                showDialog(
+                  context: context,
+                  builder: (context) => MobileWaitlist(),
+                );
               },
               style: ElevatedButton.styleFrom(
                 elevation: 0,
                 backgroundColor: Color(0xFF004ABA),
                 fixedSize: Size(355.w, 64.h),
               ),
-              child: SelectableText(
+              child: Text(
                 'Join Waitlist',
                 textAlign: TextAlign.center,
                 style: TextStyle(
