@@ -25,10 +25,9 @@ class _MobileWaitlistState extends State<MobileWaitlist> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.r)),
-      backgroundColor: Colors.white,
-      body: Container(
+    return Material(
+      color: Colors.transparent,
+      child: Container(
         height: 360.h,
         width: 377.w,
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(16.r)),
