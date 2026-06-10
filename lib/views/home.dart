@@ -133,7 +133,7 @@ class Home extends StatelessWidget {
                         ),
                         SizedBox(height: 16.h),
                         SelectableText(
-                          'Introducing Zent, Nigeria’s peer-to-peer package package delivery network.  Trusted travelers. Real-time tracking. No more waybill headache',
+                          'Introducing Zent, Nigeria’s peer-to-peer package delivery network.  Trusted travelers. Real-time tracking. No more waybill headache',
                           style: TextStyle(
                             color: const Color(
                               0xFF131214,
